@@ -50,7 +50,7 @@
         <!-- Summary Analytics Dashboard - Full Width Headcount Bar Chart -->
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-8 flex flex-col justify-between">
             <div>
-                <h3 class="text-base font-bold text-slate-800 tracking-tight">Active Author Distribution per Project Phase</h3>
+                <h3 class="text-base font-bold text-slate-800 tracking-tight">Author Distribution per Project Phase</h3>
                 <p class="text-xs text-slate-500 mb-4">Total headcount across all individual program modules over 26 years</p>
             </div>
             <div class="relative h-64 w-full">
@@ -365,7 +365,7 @@
                 data: {
                     labels: targetPhases,
                     datasets: [{
-                        label: 'Active Authors Headcount',
+                        label: 'Number of Authors',
                         data: targetPhases.map(p => countsPerPhase[p]),
                         backgroundColor: targetPhases.map(p => colorPalette[p].hex),
                         borderRadius: 8,
